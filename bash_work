@@ -1,0 +1,18 @@
+#-------------------------------------------------------------------------------
+#  Virtual machine definitions
+#-------------------------------------------------------------------------------
+export CTOS_VM=neecvh01g07.ne.intel.com
+export CPOSIX_VM=neecvh01g04.ne.intel.com
+export VMUSERNAME=ybajot
+
+
+#-------------------------------------------------------------------------------
+#  C-Posix library path
+#-------------------------------------------------------------------------------
+export CF_PXL_INC=$(cygpath "C:\CoFluentWorkspace_CPosix\PXL\include") && export CF_PXL_LIB=$(cygpath "C:\CoFluentWorkspace_CPosix\PXL\lib")/$(uname)
+
+#-------------------------------------------------------------------------------
+#  Special aliases
+#-------------------------------------------------------------------------------
+alias rebuild_pxl='(cd /cygdrive/c/CoFluentWorkspace_CPosix/PXL/build/; make clean all)'
+alias rebuild_pxl_dbg='(cd /cygdrive/c/CoFluentWorkspace_CPosix/PXL/build/; make clean debug)'
