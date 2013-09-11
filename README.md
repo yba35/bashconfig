@@ -13,6 +13,7 @@ ln -s .bash/bash_aliases .bash_aliases
 ln -s .bash/bashrc .bashrc
 ln -s .bash/bash_profile .bash_profile
 ln -s .bash/bash_work .bash_work
+ln -s .bash/inputrc .inputrc
 
 
 
