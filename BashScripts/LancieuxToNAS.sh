@@ -1,6 +1,6 @@
 #! /bin/sh
 BACKUP_DIR=/volume1/documents_backup/RSYNC_BACKUP_DELETED_FILES
-RSYNC_CMD="rsync -az --fake-super --recursive --delete --itemize-changes --backup --backup-dir=$BACKUP_DIR --exclude=Thumbs.db --exclude=.git --times --modify-window=3600 -e ssh"
+RSYNC_CMD="rsync -z --recursive --delete --itemize-changes --backup --backup-dir=$BACKUP_DIR --exclude=Thumbs.db --exclude=.git --times --modify-window=3600 -e ssh"
 SOURCE_PREFIX=/cygdrive/d
 TARGET_PREFIX=root@DSM_Lancieux:/volume1/documents_backup
  
