@@ -10,5 +10,8 @@
 
 6/ Git clone de la configuration VIM
 
-7/ Installation de Vundle sous VIM et mise à jour des plugins
+7/ Installation de Vundle sous VIM, copie du fichier .vimrc (cf. le README du projet VIM) et mise à jour des plugins
 https://github.com/gmarik/Vundle.vim/wiki/Vundle-for-Windows
+
+8/ WinMerge
+
