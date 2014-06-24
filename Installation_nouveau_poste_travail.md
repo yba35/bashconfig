@@ -18,5 +18,11 @@ https://github.com/gmarik/Vundle.vim/wiki/Vundle-for-Windows
 9/ SysInternals
 http://msdn.microsoft.com/en-us/library/bb842062.aspx
 
-10/ Greenshot
+10/ Greenshot (copie d'écran)
 http://getgreenshot.org/downloads/
+
+11/ Eclipse CDT + Python + Pydev
+  - CDT: 
+  - Python 3.4.1 pour Windows
+  - PyDev: http://pydev.org/manual_101_install.html
+    - Il faut déclarer à la main l'emplacement de l'interpréteur
