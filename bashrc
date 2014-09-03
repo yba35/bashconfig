@@ -197,6 +197,9 @@ cd_func ()
  
 alias cd=cd_func
 
+# Customize prompt
+PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\]'
+
 # Enable 'work-specific' bash stuff
 if [ -f ~/.bash_work ]; then
     . ~/.bash_work
