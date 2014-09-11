@@ -198,7 +198,10 @@ cd_func ()
 alias cd=cd_func
 
 # Customize prompt
-PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\]'
+PS1='\[\033]0;$PWD\007\]
+\[\033[33m\][\D{%d/%m/%Y %H:%M.%S}]\[\033[0m\] \[\033[35m\]\w\[\033[0m\]
+\[\033[36m\][\u.\h]\[\033[0m\] \[\033(0\]b\[\033(B\] '
+PROMPT_COMMAND='r0=$?;if [ -z "$NP" ]; then i0=0;s0="";while [ "$i0" -lt "${COLUMNS:-80}" ];do s0="q$s0";i0=$[$i0+1];done;builtin echo -ne "\n\E[1;30m\E(0$s0\E(B\E[0m"; [ $r0 == 0 ] && builtin echo -ne "\e[1A\e[32m\e(0d\e(B\e[0m\e[1B" || builtin echo -ne "\e[1A\e[31m\e(0e\e(B\e[0m\e[1B";else unset NP;fi;'
 
 # Enable 'work-specific' bash stuff
 if [ -f ~/.bash_work ]; then
