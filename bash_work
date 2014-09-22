@@ -23,7 +23,6 @@ alias rebuild_pxl_dbg='(cd /cygdrive/c/CoFluentWorkspace_CPosix/PXL/build/; make
 
 elif [ "$(hostname)" == "neecvh03g09.ne.intel.com" ] ; then
 
-echo "... Sourcing Cynthesizer environment ...."
 source ~/setup_cynth.sh
 
 fi
