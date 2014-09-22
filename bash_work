@@ -1,18 +1,30 @@
+
+if [ "$(hostname)" == "YBAJOTX-MOBL1" ] ; then
 #-------------------------------------------------------------------------------
 #  Virtual machine definitions
 #-------------------------------------------------------------------------------
+export UVM_VM=neecvh01g07.ne.intel.com
 export CTOS_VM=neecvh01g07.ne.intel.com
-export CPOSIX_VM=neecvh01g04.ne.intel.com
+export CYNTH_VM=neecvh03g09.ne.intel.com
 export VMUSERNAME=ybajot
 
 
 #-------------------------------------------------------------------------------
-#  C-Posix library path
+#  library path
 #-------------------------------------------------------------------------------
-export CF_PXL_INC=$(cygpath "C:\CoFluentWorkspace_CPosix\PXL\include") && export CF_PXL_LIB=$(cygpath "C:\CoFluentWorkspace_CPosix\PXL\lib")/$(uname)
+export UVM_LIB_PATH=$(cygpath "C:\Users\ybajotx\Desktop\Work\Projectspaces\MBV\com.cofluent.studio.uvm.library")
+export CTOS_TX_PATH=$(cygpath "C:\Users\ybajotx\Desktop\Work\Workspaces\CTOS\com.cofluent.studio.ctos.library\include\cofluent")
 
 #-------------------------------------------------------------------------------
 #  Special aliases
 #-------------------------------------------------------------------------------
 alias rebuild_pxl='(cd /cygdrive/c/CoFluentWorkspace_CPosix/PXL/build/; make clean all)'
 alias rebuild_pxl_dbg='(cd /cygdrive/c/CoFluentWorkspace_CPosix/PXL/build/; make clean debug)'
+
+elif [ "$(hostname)" == "neecvh03g09.ne.intel.com" ] ; then
+
+echo "... Sourcing Cynthesizer environment ...."
+source ~/setup_cynth.sh
+
+fi
+
