@@ -1,29 +1,10 @@
 
 if [ "$(hostname)" == "YBAJOTX-MOBL1" ] ; then
-#-------------------------------------------------------------------------------
-#  Virtual machine definitions
-#-------------------------------------------------------------------------------
-export UVM_VM=neecvh01g07.ne.intel.com
-export CTOS_VM=neecvh01g07.ne.intel.com
-export CYNTH_VM=neecvh03g09.ne.intel.com
-export VMUSERNAME=ybajot
 
-
-#-------------------------------------------------------------------------------
-#  library path
-#-------------------------------------------------------------------------------
-export UVM_LIB_PATH=$(cygpath "C:\Users\ybajotx\Desktop\Work\Projectspaces\MBV\com.cofluent.studio.uvm.library")
-export CTOS_TX_PATH=$(cygpath "C:\Users\ybajotx\Desktop\Work\Workspaces\CTOS\com.cofluent.studio.ctos.library\include\cofluent")
-
-#-------------------------------------------------------------------------------
-#  Special aliases
-#-------------------------------------------------------------------------------
-alias rebuild_pxl='(cd /cygdrive/c/CoFluentWorkspace_CPosix/PXL/build/; make clean all)'
-alias rebuild_pxl_dbg='(cd /cygdrive/c/CoFluentWorkspace_CPosix/PXL/build/; make clean debug)'
 
 elif [ "$(hostname)" == "neecvh03g09.ne.intel.com" ] ; then
 
-source ~/setup_cynth.sh
+
 
 fi
 
