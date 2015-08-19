@@ -30,3 +30,7 @@ http://getgreenshot.org/downloads/
     - Il faut déclarer à la main l'emplacement de l'interpréteur
 
 12/ TodoList
+
+13/ Launchy (indexeur de documents)
+
+
