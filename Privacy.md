@@ -1,0 +1,3 @@
+# Use open DNS servers
+[Korben page](http://korben.info/opennic-trouvez-les-serveurs-dns-les-plus-proches-de-vous.html)
+Using OpenNic...
